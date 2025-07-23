@@ -1,20 +1,3 @@
-// Redirección automática tras enviar el formulario
-document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('contacto-form');
-    if(form) {
-        form.addEventListener('submit', function(e) {
-            // Mostrar pantalla de "Enviando..."
-            var container = form.closest('.container');
-            if(container) {
-                container.innerHTML = '<div class="d-flex flex-column align-items-center justify-content-center py-5"><div class="spinner-border text-primary mb-3" role="status"><span class="visually-hidden">Enviando...</span></div><h2 class="text-center" style="color:#111;">Enviando tu mensaje...</h2><p class="text-center" style="color:#111;">Por favor espera un momento.</p></div>';
-            }
-            // Redirigir a gracias.html después de 4 segundos
-            setTimeout(function() {
-                window.location.href = 'gracias.html';
-            }, 4000);
-        });
-    }
-});
 // Validación avanzada de correo electrónico en el formulario de contacto
 window.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('form');
