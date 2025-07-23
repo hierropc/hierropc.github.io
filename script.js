@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if(container) {
                 container.innerHTML = '<div class="d-flex flex-column align-items-center justify-content-center py-5"><div class="spinner-border text-primary mb-3" role="status"><span class="visually-hidden">Enviando...</span></div><h2 class="text-center" style="color:#111;">Enviando tu mensaje...</h2><p class="text-center" style="color:#111;">Por favor espera un momento.</p></div>';
             }
-            // Redirigir a gracias.html después de 5 segundos
+            // Redirigir a gracias.html después de 4 segundos
             setTimeout(function() {
                 window.location.href = 'gracias.html';
-            }, 5000);
+            }, 4000);
         });
     }
 });
